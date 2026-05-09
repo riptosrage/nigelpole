@@ -1,1038 +1,1322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>The Nigel Pole · East Vancouver's #1 Cat Shrine</title>
-<meta name="description" content="A folk-art shrine for Nigel, the East Vancouver cat and neighbourhood folk hero. Real photos, real news, real guestbook. #TeamNigel forever.">
-<meta name="keywords" content="east van cat, nigel, nigel pole, east vancouver, team nigel, woodland park, folk hero, vancouver cat, woodland drive">
+  <title>The Nigel Pole · East Vancouver's #1 Cat Shrine</title>
+  <meta name="description"
+    content="A folk-art shrine for Nigel, the East Vancouver cat and neighbourhood folk hero. Real photos, real news, real guestbook. #TeamNigel forever.">
+  <meta name="keywords"
+    content="east van cat, nigel, nigel pole, east vancouver, team nigel, woodland park, folk hero, vancouver cat, woodland drive">
 
-<meta property="og:title" content="The Nigel Pole">
-<meta property="og:description" content="East Vancouver's #1 Cat Shrine. #TeamNigel.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://nigelpole.com">
-<meta property="og:image" content="https://nigelpole.com/photos/01.jpg">
+  <meta property="og:title" content="The Nigel Pole">
+  <meta property="og:description" content="East Vancouver's #1 Cat Shrine. #TeamNigel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nigelpole.com">
+  <meta property="og:image" content="https://nigelpole.com/photos/01.jpg">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Nigel Pole">
-<meta name="twitter:description" content="East Vancouver's #1 Cat Shrine. #TeamNigel.">
-<meta name="twitter:image" content="https://nigelpole.com/photos/01.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Nigel Pole">
+  <meta name="twitter:description" content="East Vancouver's #1 Cat Shrine. #TeamNigel.">
+  <meta name="twitter:image" content="https://nigelpole.com/photos/01.jpg">
 
-<!-- Tiny black cat favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23080808'/%3E%3Cpath d='M30 35 L30 20 L42 30 L58 30 L70 20 L70 35 Q70 65 50 70 Q30 65 30 35 Z' fill='%23000'/%3E%3Ccircle cx='40' cy='45' r='3' fill='%23d11414'/%3E%3Ccircle cx='60' cy='45' r='3' fill='%23d11414'/%3E%3C/svg%3E">
+  <!-- Tiny black cat favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23080808'/%3E%3Cpath d='M30 35 L30 20 L42 30 L58 30 L70 20 L70 35 Q70 65 50 70 Q30 65 30 35 Z' fill='%23000'/%3E%3Ccircle cx='40' cy='45' r='3' fill='%23d11414'/%3E%3Ccircle cx='60' cy='45' r='3' fill='%23d11414'/%3E%3C/svg%3E">
 
-<!-- Blackletter font for the lore heading -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <!-- Blackletter font for the lore heading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 
-<style>
-  /* ===========================================================
+  <style>
+    /* ===========================================================
      PALETTE — flatter, dirtier, blacker
   =========================================================== */
-  :root {
-    --bg: #080808;
-    --paper: #d8c89a;
-    --ink: #0a0806;
-    --red: #d11414;
-    --red-dark: #6a0808;
-    --rust: #a85020;
-    --bone: #b8a878;
-    --acid: #4eff5a;
-    --acid-dim: #2a8030;
-    --line: #2a2422;
-  }
+    :root {
+      --bg: #080808;
+      --paper: #d8c89a;
+      --ink: #0a0806;
+      --red: #d11414;
+      --red-dark: #6a0808;
+      --rust: #a85020;
+      --bone: #b8a878;
+      --acid: #4eff5a;
+      --acid-dim: #2a8030;
+      --line: #2a2422;
+    }
 
-  html, body { margin: 0; padding: 0; }
-  body {
-    font-family: "Times New Roman", Times, serif;
-    color: var(--bone);
-    background: var(--bg);
-    /* heavier grain — VHS scanlines + dust */
-    background-image:
-      repeating-linear-gradient(0deg, transparent 0 2px, rgba(255,255,255,0.018) 2px 3px),
-      repeating-linear-gradient(90deg, transparent 0 2px, rgba(0,0,0,0.25) 2px 3px),
-      radial-gradient(circle at 30% 20%, rgba(168, 80, 32, 0.05) 0%, transparent 60%),
-      radial-gradient(circle at 70% 80%, rgba(209, 20, 20, 0.04) 0%, transparent 50%);
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
-  .wrap { max-width: 1024px; margin: 0 auto; }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-  /* ===========================================================
+    body {
+      font-family: "Times New Roman", Times, serif;
+      color: var(--bone);
+      background: var(--bg);
+      /* heavier grain — VHS scanlines + dust */
+      background-image:
+        repeating-linear-gradient(0deg, transparent 0 2px, rgba(255, 255, 255, 0.018) 2px 3px),
+        repeating-linear-gradient(90deg, transparent 0 2px, rgba(0, 0, 0, 0.25) 2px 3px),
+        radial-gradient(circle at 30% 20%, rgba(168, 80, 32, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 70% 80%, rgba(209, 20, 20, 0.04) 0%, transparent 50%);
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .wrap {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+
+    /* ===========================================================
      HERO — full-bleed photo, title overlaid like graffiti
   =========================================================== */
-  .hero {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    max-height: 560px;
-    overflow: hidden;
-    background: #000;
-  }
-  .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    /* desaturate + slight darken — gritty alley feel */
-    filter: saturate(0.7) contrast(1.05) brightness(0.85);
-  }
-  .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    /* dark vignette so title reads */
-    background:
-      linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%),
-      linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 50%);
-    pointer-events: none;
-  }
-  .hero .title-overlay {
-    position: absolute;
-    left: 32px;
-    bottom: 28px;
-    z-index: 2;
-    color: var(--paper);
-  }
-  .hero .title-overlay h1 {
-    font-family: "Impact", "Arial Black", sans-serif;
-    font-size: 52px;
-    line-height: 0.9;
-    margin: 0;
-    letter-spacing: 1px;
-    text-transform: lowercase;
-    text-shadow: 2px 2px 0 var(--red-dark), 4px 4px 12px rgba(0,0,0,0.8);
-  }
-  .hero .title-overlay .sub {
-    font-family: "Courier New", monospace;
-    font-size: 12px;
-    color: var(--bone);
-    margin-top: 6px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-  .hero .title-overlay .cross {
-    font-family: serif;
-    color: var(--red);
-    font-size: 24px;
-    display: inline-block;
-    margin-right: 10px;
-    transform: rotate(180deg);
-  }
+    .hero {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      max-height: 560px;
+      overflow: hidden;
+      background: #000;
+    }
 
-  /* ===========================================================
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      /* desaturate + slight darken — gritty alley feel */
+      filter: saturate(0.7) contrast(1.05) brightness(0.85);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      /* dark vignette so title reads */
+      background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.85) 100%),
+        linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+      pointer-events: none;
+    }
+
+    .hero .title-overlay {
+      position: absolute;
+      left: 32px;
+      bottom: 28px;
+      z-index: 2;
+      color: var(--paper);
+    }
+
+    .hero .title-overlay h1 {
+      font-family: "Impact", "Arial Black", sans-serif;
+      font-size: 52px;
+      line-height: 0.9;
+      margin: 0;
+      letter-spacing: 1px;
+      text-transform: lowercase;
+      text-shadow: 2px 2px 0 var(--red-dark), 4px 4px 12px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero .title-overlay .sub {
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      color: var(--bone);
+      margin-top: 6px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .hero .title-overlay .cross {
+      font-family: serif;
+      color: var(--red);
+      font-size: 24px;
+      display: inline-block;
+      margin-right: 10px;
+      transform: rotate(180deg);
+    }
+
+    /* ===========================================================
      MARQUEE
   =========================================================== */
-  .marquee-strip {
-    background: var(--ink);
-    border-top: 1px solid var(--red-dark);
-    border-bottom: 1px solid var(--red-dark);
-    color: var(--red);
-    font-family: "Courier New", monospace;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 6px 0;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .marquee-strip .scroll {
-    display: inline-block;
-    animation: scroll 28s linear infinite;
-    padding-left: 100%;
-    letter-spacing: 2px;
-  }
-  @keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
-  }
+    .marquee-strip {
+      background: var(--ink);
+      border-top: 1px solid var(--red-dark);
+      border-bottom: 1px solid var(--red-dark);
+      color: var(--red);
+      font-family: "Courier New", monospace;
+      font-weight: bold;
+      font-size: 13px;
+      padding: 6px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
 
-  /* ===========================================================
+    .marquee-strip .scroll {
+      display: inline-block;
+      animation: scroll 28s linear infinite;
+      padding-left: 100%;
+      letter-spacing: 2px;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* ===========================================================
      LAYOUT — sidebar + main
   =========================================================== */
-  .layout-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
-  .layout-table > tbody > tr > td { vertical-align: top; padding: 8px 12px; }
-  .sidebar-cell { width: 170px; }
+    .layout-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
 
-  /* ===========================================================
+    .layout-table>tbody>tr>td {
+      vertical-align: top;
+      padding: 8px 12px;
+    }
+
+    .sidebar-cell {
+      width: 170px;
+    }
+
+    /* ===========================================================
      SIDEBAR — quieter. just nav + counter + tag.
   =========================================================== */
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 24px;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-list li {
-    border-bottom: 1px dashed var(--line);
-  }
-  .nav-list li:last-child { border-bottom: none; }
-  .nav-list a {
-    display: block;
-    padding: 7px 4px;
-    color: var(--bone);
-    font-family: "Courier New", monospace;
-    font-size: 13px;
-    text-decoration: none;
-    letter-spacing: 1px;
-  }
-  .nav-list a:hover { color: var(--red); background: #0f0d0c; }
-  .nav-list a::before {
-    content: "+ ";
-    color: var(--red);
-    font-family: serif;
-  }
+    .nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
 
-  .counter-block { margin-bottom: 20px; }
-  .counter-label-top {
-    font-family: "Courier New", monospace;
-    font-size: 10px;
-    color: var(--rust);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-  .counter-box {
-    background: #000;
-    border: 1px solid var(--acid-dim);
-    color: var(--acid);
-    font-family: "Courier New", monospace;
-    font-size: 19px;
-    text-align: center;
-    padding: 4px;
-    letter-spacing: 4px;
-    font-weight: bold;
-    text-shadow: 0 0 6px rgba(78, 255, 90, 0.5);
-  }
+    .nav-list li {
+      border-bottom: 1px dashed var(--line);
+    }
 
-  .ig-block {
-    margin-bottom: 18px;
-    border: 1px dashed var(--line);
-    padding: 8px;
-    background: rgba(196, 30, 30, 0.04);
-  }
-  .ig-block a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: var(--paper-dim);
-    font-family: "Courier New", monospace;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  .ig-block a:hover { color: var(--red); }
-  .ig-block img {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 1px solid var(--ink);
-    display: block;
-    flex-shrink: 0;
-  }
-  .ig-block .ig-handle { display: block; line-height: 1.3; }
-  .ig-block .ig-label {
-    color: var(--rust);
-    font-size: 9px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 2px;
-  }
+    .nav-list li:last-child {
+      border-bottom: none;
+    }
 
-  .under-constr {
-    color: var(--rust);
-    border: 1px dashed var(--rust);
-    display: inline-block;
-    padding: 3px 8px;
-    font-family: "Courier New", monospace;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transform: rotate(-2deg);
-    text-transform: uppercase;
-  }
+    .nav-list a {
+      display: block;
+      padding: 7px 4px;
+      color: var(--bone);
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
 
-  /* ===========================================================
+    .nav-list a:hover {
+      color: var(--red);
+      background: #0f0d0c;
+    }
+
+    .nav-list a::before {
+      content: "+ ";
+      color: var(--red);
+      font-family: serif;
+    }
+
+    .counter-block {
+      margin-bottom: 20px;
+    }
+
+    .counter-label-top {
+      font-family: "Courier New", monospace;
+      font-size: 10px;
+      color: var(--rust);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .counter-box {
+      background: #000;
+      border: 1px solid var(--acid-dim);
+      color: var(--acid);
+      font-family: "Courier New", monospace;
+      font-size: 19px;
+      text-align: center;
+      padding: 4px;
+      letter-spacing: 4px;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(78, 255, 90, 0.5);
+    }
+
+    .ig-block {
+      margin-bottom: 18px;
+      border: 1px dashed var(--line);
+      padding: 8px;
+      background: rgba(196, 30, 30, 0.04);
+    }
+
+    .ig-block a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--paper-dim);
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .ig-block a:hover {
+      color: var(--red);
+    }
+
+    .ig-block img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--ink);
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .ig-block .ig-handle {
+      display: block;
+      line-height: 1.3;
+    }
+
+    .ig-block .ig-label {
+      color: var(--rust);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .under-constr {
+      color: var(--rust);
+      border: 1px dashed var(--rust);
+      display: inline-block;
+      padding: 3px 8px;
+      font-family: "Courier New", monospace;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      transform: rotate(-2deg);
+      text-transform: uppercase;
+    }
+
+    /* ===========================================================
      NIGEL PORTRAIT — the cat himself, framed like a wanted poster
   =========================================================== */
-  .nigel-frame {
-    background: var(--paper);
-    padding: 12px 12px 8px;
-    border: 1px solid var(--ink);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 520px;
-  }
-  .nigel-frame .img-wrap {
-    background: #000;
-    border: 1px solid var(--ink);
-    overflow: hidden;
-    line-height: 0;
-  }
-  .nigel-frame img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: saturate(0.6) contrast(1.1) brightness(0.9);
-  }
-  .nigel-frame .nigel-cap {
-    font-family: "Impact", "Arial Black", sans-serif;
-    font-size: 18px;
-    color: var(--red-dark);
-    text-transform: lowercase;
-    letter-spacing: 3px;
-    margin: 8px 0 4px;
-  }
-  .nigel-frame .nigel-cap .cross {
-    color: var(--red-dark);
-    font-family: serif;
-    margin: 0 6px;
-    display: inline-block;
-    transform: rotate(180deg);
-  }
-  .nigel-frame .nigel-sub {
-    font-family: "Courier New", monospace;
-    font-size: 10px;
-    color: var(--ink);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0 0 4px;
-  }
+    .nigel-frame {
+      background: var(--paper);
+      padding: 12px 12px 8px;
+      border: 1px solid var(--ink);
+      text-align: center;
+      margin: 0 auto;
+      max-width: 520px;
+    }
 
-  /* ===========================================================
+    .nigel-frame .img-wrap {
+      background: #000;
+      border: 1px solid var(--ink);
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .nigel-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: saturate(0.6) contrast(1.1) brightness(0.9);
+    }
+
+    .nigel-frame .nigel-cap {
+      font-family: "Impact", "Arial Black", sans-serif;
+      font-size: 18px;
+      color: var(--red-dark);
+      text-transform: lowercase;
+      letter-spacing: 3px;
+      margin: 8px 0 4px;
+    }
+
+    .nigel-frame .nigel-cap .cross {
+      color: var(--red-dark);
+      font-family: serif;
+      margin: 0 6px;
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+
+    .nigel-frame .nigel-sub {
+      font-family: "Courier New", monospace;
+      font-size: 10px;
+      color: var(--ink);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 0 0 4px;
+    }
+
+    /* ===========================================================
      SECTIONS — flat, zine-like. no boxes around everything.
   =========================================================== */
-  .main-cell { padding-left: 4px; }
+    .main-cell {
+      padding-left: 4px;
+    }
 
-  .section { margin-bottom: 36px; }
-  .section h2 {
-    font-family: "Impact", "Arial Black", sans-serif;
-    font-size: 26px;
-    color: var(--red);
-    margin: 0 0 14px;
-    text-transform: lowercase;
-    letter-spacing: 1px;
-    border-bottom: 2px solid var(--red-dark);
-    padding-bottom: 6px;
-  }
-  .section h2 .cross {
-    color: var(--red);
-    font-family: serif;
-    margin-right: 8px;
-    display: inline-block;
-    transform: rotate(180deg);
-  }
-  .section p {
-    font-family: "Times New Roman", serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 10px 0;
-    color: var(--bone);
-  }
+    .section {
+      margin-bottom: 36px;
+    }
 
-  /* LORE — only section that gets the paper treatment, since it's a "sign" */
-  .lore-paper {
-    background: var(--paper);
-    color: var(--ink);
-    padding: 18px 22px;
-    border: 1px solid var(--ink);
-  }
-  .lore-paper p {
-    color: var(--ink);
-    font-family: "Times New Roman", serif;
-    font-size: 16px;
-    line-height: 1.55;
-    margin: 8px 0;
-  }
-  .lore-paper p .drop {
-    font-family: "Impact", sans-serif;
-    font-size: 38px;
-    color: var(--red-dark);
-    float: left;
-    line-height: 0.9;
-    padding: 4px 8px 0 0;
-  }
-  .lore-paper h2 {
-    font-family: "UnifrakturMaguntia", "Times New Roman", serif;
-    font-style: italic;
-    font-size: 30px;
-    color: var(--red-dark);
-    margin: 0 0 12px;
-    letter-spacing: 0;
-    text-transform: none;
-    border-bottom: 1px solid var(--ink);
-    padding-bottom: 6px;
-    text-align: center;
-  }
-  .lore-paper .closer {
-    font-style: italic;
-    color: var(--red-dark);
-    text-align: center;
-    margin-top: 14px !important;
-    border-top: 1px dashed var(--ink);
-    padding-top: 12px;
-  }
+    .section h2 {
+      font-family: "Impact", "Arial Black", sans-serif;
+      font-size: 26px;
+      color: var(--red);
+      margin: 0 0 14px;
+      text-transform: lowercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid var(--red-dark);
+      padding-bottom: 6px;
+    }
 
-  /* ===========================================================
+    .section h2 .cross {
+      color: var(--red);
+      font-family: serif;
+      margin-right: 8px;
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+
+    .section p {
+      font-family: "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: var(--bone);
+    }
+
+    /* LORE — only section that gets the paper treatment, since it's a "sign" */
+    .lore-paper {
+      background: var(--paper);
+      color: var(--ink);
+      padding: 18px 22px;
+      border: 1px solid var(--ink);
+    }
+
+    .lore-paper p {
+      color: var(--ink);
+      font-family: "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.55;
+      margin: 8px 0;
+    }
+
+    .lore-paper p .drop {
+      font-family: "Impact", sans-serif;
+      font-size: 38px;
+      color: var(--red-dark);
+      float: left;
+      line-height: 0.9;
+      padding: 4px 8px 0 0;
+    }
+
+    .lore-paper h2 {
+      font-family: "UnifrakturMaguntia", "Times New Roman", serif;
+      font-style: italic;
+      font-size: 30px;
+      color: var(--red-dark);
+      margin: 0 0 12px;
+      letter-spacing: 0;
+      text-transform: none;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 6px;
+      text-align: center;
+    }
+
+    .lore-paper .closer {
+      font-style: italic;
+      color: var(--red-dark);
+      text-align: center;
+      margin-top: 14px !important;
+      border-top: 1px dashed var(--ink);
+      padding-top: 12px;
+    }
+
+    /* ===========================================================
      GALLERY — polaroids on a black background
   =========================================================== */
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-  }
-  .photo {
-    background: var(--paper);
-    padding: 5px 5px 4px;
-    border: 1px solid var(--ink);
-  }
-  .photo .img {
-    background: #1a1a1a;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-    font-family: "Courier New", monospace;
-    font-size: 11px;
-    border: 1px solid var(--ink);
-    position: relative;
-    overflow: hidden;
-  }
-  .photo .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .photo .img.placeholder::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(135deg, #2a2a2a 25%, #1a1a1a 25%, #1a1a1a 50%, #2a2a2a 50%, #2a2a2a 75%, #1a1a1a 75%);
-    background-size: 8px 8px;
-    opacity: 0.7;
-  }
-  .photo .img.placeholder span {
-    position: relative;
-    z-index: 1;
-    background: rgba(0,0,0,0.7);
-    padding: 3px 6px;
-    color: #777;
-  }
-  .photo .cap {
-    font-family: "Courier New", monospace;
-    font-size: 11px;
-    color: var(--ink);
-    padding: 6px 2px 2px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-  .photo .cap .credit {
-    display: block;
-    font-weight: normal;
-    font-style: italic;
-    font-size: 10px;
-    color: #6b5f3f;
-    letter-spacing: 0.5px;
-    margin-top: 2px;
-    text-transform: lowercase;
-  }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
 
-  .gallery-note {
-    color: #555;
-    font-family: "Courier New", monospace;
-    font-size: 11px;
-    margin-top: 12px;
-    text-align: center;
-    letter-spacing: 1px;
-  }
-  .gallery-note a { color: var(--red); text-decoration: underline; }
-  .gallery-note a:hover { color: var(--rust); }
+    .photo {
+      background: var(--paper);
+      padding: 5px 5px 4px;
+      border: 1px solid var(--ink);
+    }
 
-  /* ===========================================================
+    .photo .img {
+      background: #1a1a1a;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      border: 1px solid var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo .img.placeholder::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(135deg, #2a2a2a 25%, #1a1a1a 25%, #1a1a1a 50%, #2a2a2a 50%, #2a2a2a 75%, #1a1a1a 75%);
+      background-size: 8px 8px;
+      opacity: 0.7;
+    }
+
+    .photo .img.placeholder span {
+      position: relative;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 3px 6px;
+      color: #777;
+    }
+
+    .photo .cap {
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      color: var(--ink);
+      padding: 6px 2px 2px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .photo .cap .credit {
+      display: block;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 10px;
+      color: #6b5f3f;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+      text-transform: lowercase;
+    }
+
+    .gallery-note {
+      color: #555;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      margin-top: 12px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .gallery-note a {
+      color: var(--red);
+      text-decoration: underline;
+    }
+
+    .gallery-note a:hover {
+      color: var(--rust);
+    }
+
+    /* ===========================================================
      NEWS — plain list, no box
   =========================================================== */
-  .news-list { list-style: none; padding: 0; margin: 0; font-family: "Times New Roman", serif; font-size: 15px; }
-  .news-list li {
-    padding: 8px 0;
-    border-bottom: 1px dashed var(--line);
-    color: var(--bone);
-  }
-  .news-list li::before {
-    content: "+ ";
-    color: var(--red);
-    font-family: serif;
-    font-weight: bold;
-  }
-  .news-link { color: var(--paper); text-decoration: underline; font-weight: normal; }
-  .news-link:visited { color: var(--rust); }
-  .news-link:hover { color: var(--red); }
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+    }
 
-  /* ===========================================================
+    .news-list li {
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--line);
+      color: var(--bone);
+    }
+
+    .news-list li::before {
+      content: "+ ";
+      color: var(--red);
+      font-family: serif;
+      font-weight: bold;
+    }
+
+    .news-link {
+      color: var(--paper);
+      text-decoration: underline;
+      font-weight: normal;
+    }
+
+    .news-link:visited {
+      color: var(--rust);
+    }
+
+    .news-link:hover {
+      color: var(--red);
+    }
+
+    /* ===========================================================
      GUESTBOOK — scrollable feed of live entries
   =========================================================== */
-  .gb-count {
-    font-family: "Courier New", monospace;
-    font-size: 13px;
-    color: var(--rust);
-    letter-spacing: 2px;
-    margin-left: 8px;
-    text-transform: lowercase;
-    font-weight: normal;
-  }
-  .gb-feed {
-    background: #000;
-    border: 1px solid var(--line);
-    height: 480px;
-    overflow-y: auto;
-    padding: 12px 14px;
-    margin-bottom: 8px;
-  }
-  .gb-feed::-webkit-scrollbar { width: 10px; }
-  .gb-feed::-webkit-scrollbar-track { background: #000; border-left: 1px solid var(--line); }
-  .gb-feed::-webkit-scrollbar-thumb { background: var(--red-dark); border: 2px solid #000; }
-  .gb-feed::-webkit-scrollbar-thumb:hover { background: var(--red); }
-  .gb-feed { scrollbar-color: var(--red-dark) #000; scrollbar-width: thin; }
+    .gb-count {
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      color: var(--rust);
+      letter-spacing: 2px;
+      margin-left: 8px;
+      text-transform: lowercase;
+      font-weight: normal;
+    }
 
-  .gb-loading, .gb-empty {
-    color: var(--rust);
-    font-family: "Courier New", monospace;
-    font-size: 13px;
-    text-align: center;
-    padding: 40px 0;
-    letter-spacing: 1px;
-  }
-  .gb-empty .big {
-    font-family: "Impact", sans-serif;
-    font-size: 22px;
-    color: var(--red);
-    display: block;
-    margin-bottom: 6px;
-    letter-spacing: 3px;
-  }
+    .gb-feed {
+      background: #000;
+      border: 1px solid var(--line);
+      height: 480px;
+      overflow-y: auto;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+    }
 
-  /* GUESTBOOK ENTRIES (live) */
-  .entry {
-    background: transparent;
-    border-left: 2px solid var(--red);
-    padding: 8px 14px;
-    margin: 0 0 14px;
-    font-family: "Courier New", monospace;
-    font-size: 14px;
-    color: var(--bone);
-    word-wrap: break-word;
-  }
-  .entry:last-child { margin-bottom: 0; }
-  .entry .who { font-weight: bold; color: var(--red); }
-  .entry .date {
-    font-size: 11px;
-    color: #555;
-    float: right;
-    font-family: "Courier New", monospace;
-  }
-  .entry .msg {
-    margin-top: 4px;
-    white-space: pre-wrap;
-  }
+    .gb-feed::-webkit-scrollbar {
+      width: 10px;
+    }
 
-  /* Form helper turns red on error */
-  #gb-helper.error { color: var(--red); }
-  #gb-helper.success { color: var(--acid); }
+    .gb-feed::-webkit-scrollbar-track {
+      background: #000;
+      border-left: 1px solid var(--line);
+    }
 
-  /* ===========================================================
+    .gb-feed::-webkit-scrollbar-thumb {
+      background: var(--red-dark);
+      border: 2px solid #000;
+    }
+
+    .gb-feed::-webkit-scrollbar-thumb:hover {
+      background: var(--red);
+    }
+
+    .gb-feed {
+      scrollbar-color: var(--red-dark) #000;
+      scrollbar-width: thin;
+    }
+
+    .gb-loading,
+    .gb-empty {
+      color: var(--rust);
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      text-align: center;
+      padding: 40px 0;
+      letter-spacing: 1px;
+    }
+
+    .gb-empty .big {
+      font-family: "Impact", sans-serif;
+      font-size: 22px;
+      color: var(--red);
+      display: block;
+      margin-bottom: 6px;
+      letter-spacing: 3px;
+    }
+
+    /* GUESTBOOK ENTRIES (live) */
+    .entry {
+      background: transparent;
+      border-left: 2px solid var(--red);
+      padding: 8px 14px;
+      margin: 0 0 14px;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      color: var(--bone);
+      word-wrap: break-word;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry .who {
+      font-weight: bold;
+      color: var(--red);
+    }
+
+    .entry .date {
+      font-size: 11px;
+      color: #555;
+      float: right;
+      font-family: "Courier New", monospace;
+    }
+
+    .entry .msg {
+      margin-top: 4px;
+      white-space: pre-wrap;
+    }
+
+    /* Form helper turns red on error */
+    #gb-helper.error {
+      color: var(--red);
+    }
+
+    #gb-helper.success {
+      color: var(--acid);
+    }
+
+    /* ===========================================================
      OLD empty-state (kept in case other sections need it)
   =========================================================== */
-  .empty-state {
-    padding: 18px 8px;
-    font-family: "Courier New", monospace;
-    font-size: 13px;
-    color: var(--rust);
-    text-align: center;
-    letter-spacing: 1px;
-    border-top: 1px dashed var(--line);
-    border-bottom: 1px dashed var(--line);
-    margin: 12px 0;
-  }
-  .empty-state .big {
-    font-family: "Impact", sans-serif;
-    font-size: 16px;
-    color: var(--red);
-    display: block;
-    margin-bottom: 4px;
-    letter-spacing: 2px;
-  }
+    .empty-state {
+      padding: 18px 8px;
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      color: var(--rust);
+      text-align: center;
+      letter-spacing: 1px;
+      border-top: 1px dashed var(--line);
+      border-bottom: 1px dashed var(--line);
+      margin: 12px 0;
+    }
 
-  /* ===========================================================
+    .empty-state .big {
+      font-family: "Impact", sans-serif;
+      font-size: 16px;
+      color: var(--red);
+      display: block;
+      margin-bottom: 4px;
+      letter-spacing: 2px;
+    }
+
+    /* ===========================================================
      FORMS — terminal style, sit directly on bg
   =========================================================== */
-  .nigel-form {
-    background: #000;
-    border: 1px solid var(--line);
-    padding: 14px 16px;
-    margin-top: 16px;
-    color: var(--bone);
-  }
-  .nigel-form .form-title {
-    font-family: "Courier New", monospace;
-    color: var(--acid);
-    font-size: 12px;
-    text-align: left;
-    margin: 0 0 12px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    border-bottom: 1px dashed var(--acid-dim);
-    padding-bottom: 6px;
-  }
-  .nigel-form .form-title::before { content: "> "; color: var(--acid); }
-  .nigel-form label {
-    display: block;
-    font-family: "Courier New", monospace;
-    font-size: 12px;
-    color: var(--rust);
-    margin: 12px 0 4px;
-    letter-spacing: 1px;
-  }
-  .nigel-form input[type="text"],
-  .nigel-form input[type="email"],
-  .nigel-form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    background: #000;
-    color: var(--acid);
-    border: 1px solid var(--acid-dim);
-    padding: 6px 8px;
-    font-family: "Courier New", monospace;
-    font-size: 13px;
-  }
-  .nigel-form input[type="text"]:focus,
-  .nigel-form input[type="email"]:focus,
-  .nigel-form textarea:focus {
-    outline: none;
-    border-color: var(--acid);
-    box-shadow: 0 0 0 1px var(--acid);
-  }
-  .nigel-form textarea { min-height: 80px; resize: vertical; }
-  .nigel-form input[type="file"] {
-    width: 100%;
-    box-sizing: border-box;
-    color: var(--rust);
-    font-family: "Courier New", monospace;
-    font-size: 11px;
-    background: #000;
-    padding: 5px;
-    border: 1px solid var(--acid-dim);
-  }
-  .nigel-form .submit-btn {
-    display: inline-block;
-    margin: 14px 0 0;
-    background: var(--red);
-    color: var(--paper) !important;
-    border: none;
-    border-bottom: 3px solid var(--red-dark);
-    font-family: "Impact", sans-serif;
-    font-weight: 900;
-    font-size: 14px;
-    padding: 8px 22px;
-    cursor: pointer;
-    text-transform: lowercase;
-    letter-spacing: 2px;
-  }
-  .nigel-form .submit-btn:hover {
-    background: var(--red-dark);
-    border-bottom-color: #000;
-  }
-  .nigel-form .helper {
-    font-family: "Courier New", monospace;
-    font-size: 10px;
-    color: #555;
-    margin-top: 12px;
-    letter-spacing: 1px;
-  }
+    .nigel-form {
+      background: #000;
+      border: 1px solid var(--line);
+      padding: 14px 16px;
+      margin-top: 16px;
+      color: var(--bone);
+    }
 
-  /* ===========================================================
+    .nigel-form .form-title {
+      font-family: "Courier New", monospace;
+      color: var(--acid);
+      font-size: 12px;
+      text-align: left;
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border-bottom: 1px dashed var(--acid-dim);
+      padding-bottom: 6px;
+    }
+
+    .nigel-form .form-title::before {
+      content: "> ";
+      color: var(--acid);
+    }
+
+    .nigel-form label {
+      display: block;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      color: var(--rust);
+      margin: 12px 0 4px;
+      letter-spacing: 1px;
+    }
+
+    .nigel-form input[type="text"],
+    .nigel-form input[type="email"],
+    .nigel-form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      background: #000;
+      color: var(--acid);
+      border: 1px solid var(--acid-dim);
+      padding: 6px 8px;
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+    }
+
+    .nigel-form input[type="text"]:focus,
+    .nigel-form input[type="email"]:focus,
+    .nigel-form textarea:focus {
+      outline: none;
+      border-color: var(--acid);
+      box-shadow: 0 0 0 1px var(--acid);
+    }
+
+    .nigel-form textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .nigel-form input[type="file"] {
+      width: 100%;
+      box-sizing: border-box;
+      color: var(--rust);
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      background: #000;
+      padding: 5px;
+      border: 1px solid var(--acid-dim);
+    }
+
+    .nigel-form .submit-btn {
+      display: inline-block;
+      margin: 14px 0 0;
+      background: var(--red);
+      color: var(--paper) !important;
+      border: none;
+      border-bottom: 3px solid var(--red-dark);
+      font-family: "Impact", sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      padding: 8px 22px;
+      cursor: pointer;
+      text-transform: lowercase;
+      letter-spacing: 2px;
+    }
+
+    .nigel-form .submit-btn:hover {
+      background: var(--red-dark);
+      border-bottom-color: #000;
+    }
+
+    .nigel-form .helper {
+      font-family: "Courier New", monospace;
+      font-size: 10px;
+      color: #555;
+      margin-top: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* ===========================================================
      CONTACT NIGEL intro
   =========================================================== */
-  .contact-intro {
-    font-family: "Times New Roman", serif;
-    font-size: 15px;
-    color: var(--bone);
-    line-height: 1.5;
-    margin: 8px 0;
-  }
+    .contact-intro {
+      font-family: "Times New Roman", serif;
+      font-size: 15px;
+      color: var(--bone);
+      line-height: 1.5;
+      margin: 8px 0;
+    }
 
-  /* ===========================================================
+    /* ===========================================================
      FOOTER — slim
   =========================================================== */
-  .footer {
-    margin-top: 40px;
-    padding: 20px 0;
-    border-top: 1px solid var(--line);
-    text-align: center;
-    color: #555;
-    font-family: "Courier New", monospace;
-    font-size: 11px;
-    letter-spacing: 2px;
-  }
-  .footer p { margin: 5px 0; }
-  .footer .updated { color: var(--rust); font-style: italic; }
-  .footer .signature {
-    color: var(--red);
-    margin-top: 14px;
-    font-family: "Impact", sans-serif;
-    font-size: 14px;
-    letter-spacing: 4px;
-  }
+    .footer {
+      margin-top: 40px;
+      padding: 20px 0;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: #555;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
 
-  /* ===========================================================
+    .footer p {
+      margin: 5px 0;
+    }
+
+    .footer .updated {
+      color: var(--rust);
+      font-style: italic;
+    }
+
+    .footer .signature {
+      color: var(--red);
+      margin-top: 14px;
+      font-family: "Impact", sans-serif;
+      font-size: 14px;
+      letter-spacing: 4px;
+    }
+
+    /* ===========================================================
      MOBILE
   =========================================================== */
-  @media (max-width: 720px) {
-    .hero { aspect-ratio: 4 / 5; max-height: 500px; }
-    .hero .title-overlay { left: 18px; bottom: 18px; }
-    .hero .title-overlay h1 { font-size: 36px; }
-    .hero .title-overlay .sub { font-size: 10px; letter-spacing: 2px; }
-    .marquee-strip { font-size: 11px; }
-    .layout-table, .layout-table tbody, .layout-table tr, .layout-table td { display: block; width: 100% !important; }
-    .layout-table > tbody > tr > td { padding: 6px 14px; }
-    .sidebar-cell { width: 100% !important; }
-    .nav-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); }
-    .nav-list li { border-bottom: 1px dashed var(--line); border-right: 1px dashed var(--line); }
-    .nav-list li:nth-child(even) { border-right: none; }
-    .nav-list a { font-size: 12px; padding: 8px 6px; }
-    .counter-block { display: flex; align-items: center; gap: 12px; }
-    .counter-label-top { margin-bottom: 0; }
-    .section h2 { font-size: 22px; }
-    .section p, .lore-paper p { font-size: 14px; }
-    .lore-paper { padding: 14px 16px; }
-    .lore-paper h2 { font-size: 24px; }
-    .lore-paper p .drop { font-size: 28px; }
-    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    .photo .img { height: 160px; }
-    .nigel-frame { max-width: 100%; }
-    .nigel-frame .nigel-cap { font-size: 16px; letter-spacing: 2px; }
-  }
-</style>
+    @media (max-width: 720px) {
+      .hero {
+        aspect-ratio: 4 / 5;
+        max-height: 500px;
+      }
+
+      .hero .title-overlay {
+        left: 18px;
+        bottom: 18px;
+      }
+
+      .hero .title-overlay h1 {
+        font-size: 36px;
+      }
+
+      .hero .title-overlay .sub {
+        font-size: 10px;
+        letter-spacing: 2px;
+      }
+
+      .marquee-strip {
+        font-size: 11px;
+      }
+
+      .layout-table,
+      .layout-table tbody,
+      .layout-table tr,
+      .layout-table td {
+        display: block;
+        width: 100% !important;
+      }
+
+      .layout-table>tbody>tr>td {
+        padding: 6px 14px;
+      }
+
+      .sidebar-cell {
+        width: 100% !important;
+      }
+
+      .nav-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border: 1px solid var(--line);
+      }
+
+      .nav-list li {
+        border-bottom: 1px dashed var(--line);
+        border-right: 1px dashed var(--line);
+      }
+
+      .nav-list li:nth-child(even) {
+        border-right: none;
+      }
+
+      .nav-list a {
+        font-size: 12px;
+        padding: 8px 6px;
+      }
+
+      .counter-block {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .counter-label-top {
+        margin-bottom: 0;
+      }
+
+      .section h2 {
+        font-size: 22px;
+      }
+
+      .section p,
+      .lore-paper p {
+        font-size: 14px;
+      }
+
+      .lore-paper {
+        padding: 14px 16px;
+      }
+
+      .lore-paper h2 {
+        font-size: 24px;
+      }
+
+      .lore-paper p .drop {
+        font-size: 28px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .photo .img {
+        height: 160px;
+      }
+
+      .nigel-frame {
+        max-width: 100%;
+      }
+
+      .nigel-frame .nigel-cap {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<!--
+  <!--
   HIDDEN FORM for Netlify Forms detection (contact form).
   The guestbook now uses a Netlify Function (see /api/guestbook).
   Don't delete the contact form below — it's how Netlify knows the contact form exists.
 -->
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name">
-  <input type="email" name="email">
-  <textarea name="message"></textarea>
-  <input type="file" name="attachment">
-</form>
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <textarea name="message"></textarea>
+    <input type="file" name="attachment">
+  </form>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="photos/01.jpg" alt="The Nigel Pole at night, covered in hand-painted signs">
-  <div class="title-overlay">
-    <h1><span class="cross">&#x271D;</span>the nigel pole</h1>
-    <div class="sub">east van &middot; woodland drive &middot; #teamnigel</div>
+  <!-- HERO -->
+  <div class="hero">
+    <img src="photos/01.jpg" alt="The Nigel Pole at night, covered in hand-painted signs">
+    <div class="title-overlay">
+      <h1><span class="cross">&#x271D;</span>the nigel pole</h1>
+      <div class="sub">east van &middot; woodland drive &middot; #teamnigel</div>
+    </div>
   </div>
-</div>
 
-<!-- MARQUEE — placeholders. update with real pole quotes when ready. -->
-<div class="marquee-strip"><span class="scroll">&#x271D; nigel stole my catalytic converter but i don't care &#x271D; beware of nigel he will eat you &#x271D; nigel support group join today &#x271D; have you been wronged? &#x271D; team nigel forever &#x271D; sign the guestbook &#x271D;</span></div>
+  <!-- MARQUEE — placeholders. update with real pole quotes when ready. -->
+  <div class="marquee-strip"><span class="scroll">&#x271D; nigel stole my catalytic converter but i don't care &#x271D;
+      beware of nigel he will eat you &#x271D; nigel support group join today &#x271D; have you been wronged? &#x271D;
+      team nigel forever &#x271D; sign the guestbook &#x271D;</span></div>
 
-<div class="wrap">
-<table class="layout-table"><tbody><tr>
+  <div class="wrap">
+    <table class="layout-table">
+      <tbody>
+        <tr>
 
-  <!-- SIDEBAR -->
-  <td class="sidebar-cell">
-    <ul class="nav-list">
-      <li><a href="#gallery">gallery</a></li>
-      <li><a href="#nigel">nigel</a></li>
-      <li><a href="#guestbook">guestbook</a></li>
-      <li><a href="#lore">the lore</a></li>
-      <li><a href="#news">in the news</a></li>
-      <li><a href="#contact">contact nigel</a></li>
-    </ul>
+          <!-- SIDEBAR -->
+          <td class="sidebar-cell">
+            <ul class="nav-list">
+              <li><a href="#gallery">gallery</a></li>
+              <li><a href="#nigel">nigel</a></li>
+              <li><a href="#guestbook">guestbook</a></li>
+              <li><a href="#lore">the lore</a></li>
+              <li><a href="#news">in the news</a></li>
+              <li><a href="#contact">contact nigel</a></li>
+            </ul>
 
-    <div class="counter-block">
-      <div class="counter-label-top">visitors</div>
-      <div class="counter-box" id="counter">0000001</div>
-    </div>
+            <div class="counter-block">
+              <div class="counter-label-top">visitors</div>
+              <div class="counter-box" id="counter">0000001</div>
+            </div>
 
-    <div class="ig-block">
-      <a href="https://instagram.com/nigelpole" target="_blank" rel="noopener">
-        <img src="photos/avatar.jpg" alt="The Nigel Pole on Instagram">
-        <span class="ig-handle">
-          <span class="ig-label">follow</span>
-          @nigelpole
-        </span>
-      </a>
-    </div>
+            <div class="ig-block">
+              <a href="https://instagram.com/nigelpole" target="_blank" rel="noopener">
+                <img src="photos/avatar.jpg" alt="The Nigel Pole on Instagram">
+                <span class="ig-handle">
+                  <span class="ig-label">follow</span>
+                  @nigelpole
+                </span>
+              </a>
+            </div>
 
-    <div style="text-align:center;">
-      <span class="under-constr">&#9888; under construction</span>
-    </div>
-  </td>
 
-  <!-- MAIN -->
-  <td class="main-cell">
+          </td>
 
-    <!-- GALLERY -->
-    <div class="section" id="gallery">
-      <h2><span class="cross">&#x271D;</span>gallery</h2>
-      <div class="gallery-grid" id="gallery-grid" style="grid-template-columns: repeat(2, 1fr);">
-        <!-- The pole at night is always first (the iconic shot, used elsewhere on site) -->
-        <div class="photo"><div class="img"><img src="photos/01.jpg" alt="The Nigel Pole at night, covered in hand-painted signs, drawings, and tributes"></div><div class="cap">the pole, at night</div></div>
-        <!-- The rest are loaded from photos/gallery/manifest.json -->
-      </div>
-      <p class="gallery-note">// more photos incoming. <a href="#contact">send yours via contact nigel</a> //</p>
-    </div>
+          <!-- MAIN -->
+          <td class="main-cell">
 
-    <!-- THE MAN HIMSELF -->
-    <div class="section" id="nigel">
-      <div class="nigel-frame">
-        <div class="img-wrap">
-          <img src="photos/nigel.jpg" alt="Nigel, a black cat with glowing eyes, captured on flash photography at night with a person sitting behind him">
-        </div>
-        <div class="nigel-cap"><span class="cross">&#x271D;</span>the man himself<span class="cross">&#x271D;</span></div>
-        <div class="nigel-sub">nigel &middot; he sees you</div>
-      </div>
-    </div>
+            <!-- GALLERY -->
+            <div class="section" id="gallery">
+              <h2><span class="cross">&#x271D;</span>gallery</h2>
+              <div class="gallery-grid" id="gallery-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <!-- The pole at night is always first (the iconic shot, used elsewhere on site) -->
+                <div class="photo">
+                  <div class="img"><img src="photos/01.jpg"
+                      alt="The Nigel Pole at night, covered in hand-painted signs, drawings, and tributes"></div>
+                  <div class="cap">the pole, at night</div>
+                </div>
+                <!-- The rest are loaded from photos/gallery/manifest.json -->
+              </div>
+              <p class="gallery-note">// more photos incoming. <a href="#contact">send yours via contact nigel</a> //
+              </p>
+            </div>
 
-    <!-- GUESTBOOK -->
-    <div class="section" id="guestbook">
-      <h2><span class="cross">&#x271D;</span>guestbook <span class="gb-count" id="gb-count"></span></h2>
+            <!-- THE MAN HIMSELF -->
+            <div class="section" id="nigel">
+              <div class="nigel-frame">
+                <div class="img-wrap">
+                  <img src="photos/nigel.jpg"
+                    alt="Nigel, a black cat with glowing eyes, captured on flash photography at night with a person sitting behind him">
+                </div>
+                <div class="nigel-cap"><span class="cross">&#x271D;</span>the man himself<span
+                    class="cross">&#x271D;</span></div>
+                <div class="nigel-sub">nigel &middot; he sees you</div>
+              </div>
+            </div>
 
-      <div class="gb-feed" id="gb-feed">
-        <div class="gb-loading">loading entries...</div>
-      </div>
+            <!-- GUESTBOOK -->
+            <div class="section" id="guestbook">
+              <h2><span class="cross">&#x271D;</span>guestbook <span class="gb-count" id="gb-count"></span></h2>
 
-      <form id="gb-form" class="nigel-form" autocomplete="off">
-        <p style="display:none;"><label>Don't fill this: <input name="website" tabindex="-1" autocomplete="off"></label></p>
+              <div class="gb-feed" id="gb-feed">
+                <div class="gb-loading">loading entries...</div>
+              </div>
 
-        <div class="form-title">sign the guestbook</div>
+              <form id="gb-form" class="nigel-form" autocomplete="off">
+                <p style="display:none;"><label>Don't fill this: <input name="website" tabindex="-1"
+                      autocomplete="off"></label></p>
 
-        <label for="gb-name">your name (or alias):</label>
-        <input type="text" id="gb-name" name="name" maxlength="40" required>
+                <div class="form-title">sign the guestbook</div>
 
-        <label for="gb-message">your message:</label>
-        <textarea id="gb-message" name="message" maxlength="500" required></textarea>
+                <label for="gb-name">your name (or alias):</label>
+                <input type="text" id="gb-name" name="name" maxlength="40" required>
 
-        <button type="submit" class="submit-btn" id="gb-submit">&raquo; sign &laquo;</button>
-        <p class="helper" id="gb-helper">// just like the pole. text auto-publishes. be cool. //</p>
-      </form>
-    </div>
+                <label for="gb-message">your message:</label>
+                <textarea id="gb-message" name="message" maxlength="500" required></textarea>
 
-    <!-- LORE (consolidated welcome + shrine) -->
-    <div class="section" id="lore">
-      <div class="lore-paper">
-        <h2>&#x271D; the lore &#x271D;</h2>
-        <p><span class="drop">N</span>igel is a black cat. He lives in East Van. He has been deemed a folk hero. His pole stands on Woodland Drive, near Woodland Park.</p>
-        <p>The pole holds many tributes. It is the most successful public art project in East Vancouver and nobody is in charge of it.</p>
-        <p class="closer">Sign the guestbook. Add to the pole. Do not look him directly in the eye.</p>
-      </div>
-    </div>
+                <button type="submit" class="submit-btn" id="gb-submit">&raquo; sign &laquo;</button>
+                <p class="helper" id="gb-helper">// just like the pole. text auto-publishes. be cool. //</p>
+              </form>
+            </div>
 
-    <!-- NEWS -->
-    <div class="section" id="news">
-      <h2><span class="cross">&#x271D;</span>in the news</h2>
-      <ul class="news-list">
-        <li><a href="https://www.ctvnews.ca/vancouver/article/teamnigel-the-cat-creating-community/" class="news-link" target="_blank" rel="noopener">CTV News &mdash; "#TeamNigel: the cat creating community"</a></li>
-        <li><a href="https://www.castanet.net/news/Metro-Vancouver/613471/-Team-Nigel-rallies-behind-East-Vancouver-cat-after-complaint-about-feline-folk-hero" class="news-link" target="_blank" rel="noopener">Castanet &mdash; "Team Nigel rallies behind East Vancouver cat after complaint about feline folk hero"</a></li>
-      </ul>
-    </div>
+            <!-- LORE (consolidated welcome + shrine) -->
+            <div class="section" id="lore">
+              <div class="lore-paper">
+                <h2>&#x271D; the lore &#x271D;</h2>
+                <p><span class="drop">N</span>igel is a black cat. He lives in East Van. He has been deemed a folk hero.
+                  His pole stands on Woodland Drive, near Woodland Park.</p>
+                <p>The pole holds many tributes. It is the most successful public art project in East Vancouver and
+                  nobody is in charge of it.</p>
+                <p class="closer">Sign the guestbook. Add to the pole. Do not look him directly in the eye.</p>
+              </div>
+            </div>
 
-    <!-- CONTACT NIGEL -->
-    <div class="section" id="contact">
-      <h2><span class="cross">&#x271D;</span>contact nigel</h2>
-      <p class="contact-intro">Got something for the pole? A story, a sighting, a drawing, a complaint, a confession, a news tip, a piece of art? Send it. If we like it and the weather permits, we may print it and staple it to the actual pole. No promises. Nigel decides.</p>
+            <!-- NEWS -->
+            <div class="section" id="news">
+              <h2><span class="cross">&#x271D;</span>in the news</h2>
+              <ul class="news-list">
+                <li><a href="https://www.ctvnews.ca/vancouver/article/teamnigel-the-cat-creating-community/"
+                    class="news-link" target="_blank" rel="noopener">CTV News &mdash; "#TeamNigel: the cat creating
+                    community"</a></li>
+                <li><a
+                    href="https://www.castanet.net/news/Metro-Vancouver/613471/-Team-Nigel-rallies-behind-East-Vancouver-cat-after-complaint-about-feline-folk-hero"
+                    class="news-link" target="_blank" rel="noopener">Castanet &mdash; "Team Nigel rallies behind East
+                    Vancouver cat after complaint about feline folk hero"</a></li>
+              </ul>
+            </div>
 
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" action="/thanks.html" class="nigel-form">
-        <input type="hidden" name="form-name" value="contact">
-        <p style="display:none;"><label>Don't fill this: <input name="bot-field"></label></p>
+            <!-- CONTACT NIGEL -->
+            <div class="section" id="contact">
+              <h2><span class="cross">&#x271D;</span>contact nigel</h2>
+              <p class="contact-intro">Got something for the pole? A story, a sighting, a drawing, a complaint, a
+                confession, a news tip, a piece of art? Send it. If we like it and the weather permits, we may print it
+                and staple it to the actual pole. No promises. Nigel decides.</p>
 
-        <div class="form-title">send something in</div>
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                enctype="multipart/form-data" action="/thanks.html" class="nigel-form">
+                <input type="hidden" name="form-name" value="contact">
+                <p style="display:none;"><label>Don't fill this: <input name="bot-field"></label></p>
 
-        <label for="contact-name">your name (or alias):</label>
-        <input type="text" id="contact-name" name="name" required>
+                <div class="form-title">send something in</div>
 
-        <label for="contact-email">your email:</label>
-        <input type="email" id="contact-email" name="email" required>
+                <label for="contact-name">your name (or alias):</label>
+                <input type="text" id="contact-name" name="name" required>
 
-        <label for="contact-message">your message:</label>
-        <textarea id="contact-message" name="message" required></textarea>
+                <label for="contact-email">your email:</label>
+                <input type="email" id="contact-email" name="email" required>
 
-        <label for="contact-attachment">attach something (optional):</label>
-        <input type="file" id="contact-attachment" name="attachment" accept="image/*,application/pdf">
+                <label for="contact-message">your message:</label>
+                <textarea id="contact-message" name="message" required></textarea>
 
-        <button type="submit" class="submit-btn">&raquo; send it &laquo;</button>
-        <p class="helper">// read by hand. no guarantees on what happens next //</p>
-      </form>
-    </div>
+                <label for="contact-attachment">attach something (optional):</label>
+                <input type="file" id="contact-attachment" name="attachment" accept="image/*,application/pdf">
 
-    <!-- FOOTER -->
-    <div class="footer">
-      <p class="updated">&#x271D; last updated: whenever nigel permits &#x271D;</p>
-      <p>maintained by volunteers and cats</p>
-      <p class="signature">#teamnigel</p>
-    </div>
+                <button type="submit" class="submit-btn">&raquo; send it &laquo;</button>
+                <p class="helper">// read by hand. no guarantees on what happens next //</p>
+              </form>
+            </div>
 
-  </td>
-</tr></tbody></table>
-</div>
+            <!-- FOOTER -->
+            <div class="footer">
+              <p class="updated">&#x271D; last updated: whenever nigel permits &#x271D;</p>
+              <p>maintained by volunteers and cats</p>
+              <p class="signature">#teamnigel</p>
+            </div>
 
-<script>
-  // VISITOR COUNTER (free shared count via CountAPI, fallback to localStorage)
-  (function() {
-    var el = document.getElementById('counter');
-    if (!el) return;
-    fetch('https://api.countapi.xyz/hit/nigelpole.com/visits')
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        if (data && typeof data.value === 'number') {
-          el.textContent = String(data.value).padStart(7, '0');
-        } else { throw new Error('bad response'); }
-      })
-      .catch(function() {
-        var key = 'nigelpole_visits';
-        var n = parseInt(localStorage.getItem(key) || '1', 10) + 1;
-        localStorage.setItem(key, n);
-        el.textContent = String(n).padStart(7, '0');
-      });
-  })();
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  // GALLERY (loads from photos/gallery/manifest.json built at deploy time)
-  (function() {
-    var grid = document.getElementById('gallery-grid');
-    if (!grid) return;
-
-    function escapeAttr(s) {
-      return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/"/g, '&quot;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-    }
-    function escapeText(s) {
-      return String(s)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;');
-    }
-
-    fetch('/photos/gallery/manifest.json', { cache: 'no-store' })
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        var photos = (data && data.photos) || [];
-        var html = photos.map(function(p) {
-          var alt = p.caption || 'A photo from the Nigel Pole';
-          var capHtml = '';
-          if (p.caption || p.credit) {
-            capHtml = '<div class="cap">';
-            if (p.caption) capHtml += escapeText(p.caption);
-            if (p.credit) capHtml += '<span class="credit">' + escapeText(p.credit) + '</span>';
-            capHtml += '</div>';
-          }
-          return '<div class="photo">' +
-            '<div class="img"><img src="' + escapeAttr(p.src) + '" alt="' + escapeAttr(alt) + '" loading="lazy"></div>' +
-            capHtml +
-          '</div>';
-        }).join('');
-        grid.insertAdjacentHTML('beforeend', html);
-      })
-      .catch(function() {
-        // Silent fail. The hero photo (01.jpg) is hardcoded so the gallery is never empty.
-      });
-  })();
-
-  // GUESTBOOK
-  (function() {
-    var feed = document.getElementById('gb-feed');
-    var countEl = document.getElementById('gb-count');
-    var form = document.getElementById('gb-form');
-    var nameEl = document.getElementById('gb-name');
-    var msgEl = document.getElementById('gb-message');
-    var btn = document.getElementById('gb-submit');
-    var helper = document.getElementById('gb-helper');
-    if (!feed || !form) return;
-
-    function render(entries) {
-      if (!entries || entries.length === 0) {
-        feed.innerHTML = '<div class="gb-empty"><span class="big">be the first</span>no entries yet</div>';
-        countEl.textContent = '';
-        return;
-      }
-      countEl.textContent = '(' + entries.length + ')';
-      // newest first
-      var sorted = entries.slice().sort(function(a, b) {
-        return (b.timestamp || 0) - (a.timestamp || 0);
-      });
-      feed.innerHTML = sorted.map(function(e) {
-        return '<div class="entry">' +
-          '<span class="date">' + (e.date || '') + '</span>' +
-          '<span class="who">' + e.name + ':</span>' +
-          '<div class="msg">' + e.message + '</div>' +
-        '</div>';
-      }).join('');
-    }
-
-    function load() {
-      fetch('/api/guestbook', { cache: 'no-store' })
-        .then(function(r) { return r.json(); })
-        .then(function(data) { render(data.entries || []); })
-        .catch(function() {
-          feed.innerHTML = '<div class="gb-empty">could not load entries. try refreshing.</div>';
-        });
-    }
-
-    function setHelper(text, kind) {
-      helper.textContent = text;
-      helper.className = 'helper' + (kind ? ' ' + kind : '');
-    }
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var name = nameEl.value.trim();
-      var message = msgEl.value.trim();
-      if (!name || !message) return;
-
-      btn.disabled = true;
-      btn.textContent = '> sending...';
-      setHelper('// sending //', '');
-
-      fetch('/api/guestbook-sign', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({
-          name: name,
-          message: message,
-          website: form.querySelector('input[name="website"]').value
+  <script>
+    // VISITOR COUNTER (free shared count via CountAPI, fallback to localStorage)
+    (function () {
+      var el = document.getElementById('counter');
+      if (!el) return;
+      fetch('https://api.countapi.xyz/hit/nigelpole.com/visits')
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (data && typeof data.value === 'number') {
+            el.textContent = String(data.value).padStart(7, '0');
+          } else { throw new Error('bad response'); }
         })
-      })
-      .then(function(r) { return r.json().then(function(d) { return { status: r.status, data: d }; }); })
-      .then(function(res) {
-        if (res.data.ok) {
-          nameEl.value = '';
-          msgEl.value = '';
-          setHelper('// signed. welcome to the pole. #teamnigel //', 'success');
-          load();
-        } else {
-          setHelper('// ' + (res.data.error || 'something went wrong') + ' //', 'error');
-        }
-      })
-      .catch(function() {
-        setHelper('// network error. try again. //', 'error');
-      })
-      .finally(function() {
-        btn.disabled = false;
-        btn.textContent = '\u00BB sign \u00AB';
-      });
-    });
+        .catch(function () {
+          var key = 'nigelpole_visits';
+          var n = parseInt(localStorage.getItem(key) || '1', 10) + 1;
+          localStorage.setItem(key, n);
+          el.textContent = String(n).padStart(7, '0');
+        });
+    })();
 
-    load();
-  })();
-</script>
+    // GALLERY (loads from photos/gallery/manifest.json built at deploy time)
+    (function () {
+      var grid = document.getElementById('gallery-grid');
+      if (!grid) return;
+
+      function escapeAttr(s) {
+        return String(s)
+          .replace(/&/g, '&amp;')
+          .replace(/"/g, '&quot;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+      function escapeText(s) {
+        return String(s)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+      }
+
+      fetch('/photos/gallery/manifest.json', { cache: 'no-store' })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          var photos = (data && data.photos) || [];
+          var html = photos.map(function (p) {
+            var alt = p.caption || 'A photo from the Nigel Pole';
+            var capHtml = '';
+            if (p.caption || p.credit) {
+              capHtml = '<div class="cap">';
+              if (p.caption) capHtml += escapeText(p.caption);
+              if (p.credit) capHtml += '<span class="credit">' + escapeText(p.credit) + '</span>';
+              capHtml += '</div>';
+            }
+            return '<div class="photo">' +
+              '<div class="img"><img src="' + escapeAttr(p.src) + '" alt="' + escapeAttr(alt) + '" loading="lazy"></div>' +
+              capHtml +
+              '</div>';
+          }).join('');
+          grid.insertAdjacentHTML('beforeend', html);
+        })
+        .catch(function () {
+          // Silent fail. The hero photo (01.jpg) is hardcoded so the gallery is never empty.
+        });
+    })();
+
+    // GUESTBOOK
+    (function () {
+      var feed = document.getElementById('gb-feed');
+      var countEl = document.getElementById('gb-count');
+      var form = document.getElementById('gb-form');
+      var nameEl = document.getElementById('gb-name');
+      var msgEl = document.getElementById('gb-message');
+      var btn = document.getElementById('gb-submit');
+      var helper = document.getElementById('gb-helper');
+      if (!feed || !form) return;
+
+      function render(entries) {
+        if (!entries || entries.length === 0) {
+          feed.innerHTML = '<div class="gb-empty"><span class="big">be the first</span>no entries yet</div>';
+          countEl.textContent = '';
+          return;
+        }
+        countEl.textContent = '(' + entries.length + ')';
+        // newest first
+        var sorted = entries.slice().sort(function (a, b) {
+          return (b.timestamp || 0) - (a.timestamp || 0);
+        });
+        feed.innerHTML = sorted.map(function (e) {
+          return '<div class="entry">' +
+            '<span class="date">' + (e.date || '') + '</span>' +
+            '<span class="who">' + e.name + ':</span>' +
+            '<div class="msg">' + e.message + '</div>' +
+            '</div>';
+        }).join('');
+      }
+
+      function load() {
+        fetch('/api/guestbook', { cache: 'no-store' })
+          .then(function (r) { return r.json(); })
+          .then(function (data) { render(data.entries || []); })
+          .catch(function () {
+            feed.innerHTML = '<div class="gb-empty">could not load entries. try refreshing.</div>';
+          });
+      }
+
+      function setHelper(text, kind) {
+        helper.textContent = text;
+        helper.className = 'helper' + (kind ? ' ' + kind : '');
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = nameEl.value.trim();
+        var message = msgEl.value.trim();
+        if (!name || !message) return;
+
+        btn.disabled = true;
+        btn.textContent = '> sending...';
+        setHelper('// sending //', '');
+
+        fetch('/api/guestbook-sign', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            name: name,
+            message: message,
+            website: form.querySelector('input[name="website"]').value
+          })
+        })
+          .then(function (r) { return r.json().then(function (d) { return { status: r.status, data: d }; }); })
+          .then(function (res) {
+            if (res.data.ok) {
+              nameEl.value = '';
+              msgEl.value = '';
+              setHelper('// signed. welcome to the pole. #teamnigel //', 'success');
+              load();
+            } else {
+              setHelper('// ' + (res.data.error || 'something went wrong') + ' //', 'error');
+            }
+          })
+          .catch(function () {
+            setHelper('// network error. try again. //', 'error');
+          })
+          .finally(function () {
+            btn.disabled = false;
+            btn.textContent = '\u00BB sign \u00AB';
+          });
+      });
+
+      load();
+    })();
+  </script>
 
 </body>
+
 </html>
