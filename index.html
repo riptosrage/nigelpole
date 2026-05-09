@@ -429,6 +429,16 @@
     letter-spacing: 1px;
     text-align: center;
   }
+  .photo .cap .credit {
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 10px;
+    color: #6b5f3f;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+    text-transform: lowercase;
+  }
 
   .gallery-note {
     color: #555;
@@ -917,9 +927,13 @@
         var photos = (data && data.photos) || [];
         var html = photos.map(function(p) {
           var alt = p.caption || 'A photo from the Nigel Pole';
-          var capHtml = p.caption
-            ? '<div class="cap">' + escapeText(p.caption) + '</div>'
-            : '';
+          var capHtml = '';
+          if (p.caption || p.credit) {
+            capHtml = '<div class="cap">';
+            if (p.caption) capHtml += escapeText(p.caption);
+            if (p.credit) capHtml += '<span class="credit">' + escapeText(p.credit) + '</span>';
+            capHtml += '</div>';
+          }
           return '<div class="photo">' +
             '<div class="img"><img src="' + escapeAttr(p.src) + '" alt="' + escapeAttr(alt) + '" loading="lazy"></div>' +
             capHtml +
