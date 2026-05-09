@@ -1,0 +1,22 @@
+# dependencies — installed by Netlify on build
+node_modules/
+
+# build output
+.netlify/
+dist/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
